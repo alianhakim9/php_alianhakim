@@ -8,13 +8,13 @@
 </head>
 
 <body>
-    <form action="soal2d.php" method="GET">
+    <form action="soal2d.php" method="POST">
         <div>
             <label for="hobi">Hobi Anda : </label>
             <input type="text" id="hobi" name="hobi" require>
-            <?php if (isset($_GET['nama'])) { ?>
-                <input type="hidden" name="nama" value="<?php echo htmlspecialchars($_GET['nama']); ?>">
-                <input type="hidden" name="umur" value="<?php echo htmlspecialchars($_GET['umur']); ?>">
+            <?php if (isset($_POST['nama'])) { ?>
+                <input type="hidden" name="nama" value="<?php echo htmlspecialchars($_POST['nama']); ?>">
+                <input type="hidden" name="umur" value="<?php echo htmlspecialchars($_POST['umur']); ?>">
             <?php } ?>
         </div>
         <button type="submit">Submit</button>

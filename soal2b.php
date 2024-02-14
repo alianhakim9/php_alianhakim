@@ -8,12 +8,12 @@
 </head>
 
 <body>
-    <form action="soal2c.php" method="GET">
+    <form action="soal2c.php" method="POST">
         <div>
             <label for="umur">Umur Anda : </label>
             <input type="number" id="umur" name="umur" require>
-            <?php if (isset($_GET['nama'])) { ?>
-                <input type="hidden" name="nama" value="<?php echo htmlspecialchars($_GET['nama']); ?>">
+            <?php if (isset($_POST['nama'])) { ?>
+                <input type="hidden" name="nama" value="<?php echo htmlspecialchars($_POST['nama']); ?>">
             <?php } ?>
         </div>
         <button type="submit">Submit</button>

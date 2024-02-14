@@ -9,9 +9,9 @@
 
 <body>
     <div>
-        <p>Nama : <?php echo htmlspecialchars($_GET['nama']); ?></p>
-        <p>Umur : <?php echo htmlspecialchars($_GET['umur']); ?></p>
-        <p>Hobi : <?php echo htmlspecialchars($_GET['hobi']); ?></p>
+        <p>Nama : <?php echo htmlspecialchars($_POST['nama']); ?></p>
+        <p>Umur : <?php echo htmlspecialchars($_POST['umur']); ?></p>
+        <p>Hobi : <?php echo htmlspecialchars($_POST['hobi']); ?></p>
     </div>
 </body>
 

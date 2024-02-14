@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="soal2b.php" method="GET">
+    <form action="soal2b.php" method="POST">
         <div>
             <label for="name">Nama Anda : </label>
             <input type="text" id="nama" name="nama" require>
